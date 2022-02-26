@@ -1,6 +1,5 @@
 use std::io;
 
-
 pub fn fibo(n: u128) -> u128 {
 	if n < 2 {
 		n

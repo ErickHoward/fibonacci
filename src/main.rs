@@ -9,16 +9,14 @@ mod fibonacci;
 #[clap(author, version, about, long_about = None)]
 
 struct Cli {
-    #[clap(parse(try_from_str))]
+    #[clap(parse(try_from_str), help = "The term of the fibonacci sequence to output")]
     term: u128,
 
-    #[clap(short, long)]
+    #[clap(short, long, help = "Whether to print all terms from the 1st to the nth term as an array")]
     all_terms: bool,
 
-    #[clap(short, long)]
-    verbose: bool,
 
-    #[clap(short, long)]
+    #[clap(short, long, help = "Write the output of the program to a file")]
     output: Option<String>,
 }
 

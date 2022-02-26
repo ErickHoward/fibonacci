@@ -1,7 +1,7 @@
-use clap::{ArgGroup, Parser, Subcommand};
-use std::env;
-use std::fs::{copy, File};
+use std::fs::File;
 use std::io::Write;
+
+use clap::Parser;
 
 mod fibonacci;
 
